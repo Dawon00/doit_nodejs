@@ -131,6 +131,7 @@ router.route("/process/login").post(function (req, res) {
 
 app.use("/", router);
 
+// 404 에러 페이지 처리
 var errorHandler = expressErrorHandler({
   static: {
     404: "./public/404.html",
